@@ -1,12 +1,12 @@
 # AddressBookApp
 
 # Installed Nuget packages:
-Microsoft.AspNet.WebApi.Core
-Microsoft.EntityFrameworkCore
-Microsoft.EntityFrameworkCore.Design
-Microsoft.EntityFrameworkCore.SqlServer
-Microsoft.EntityFrameworkCore.Tools
-Microsoft.Extensions.Configuration
+Microsoft.AspNet.WebApi.Core\
+Microsoft.EntityFrameworkCore\
+Microsoft.EntityFrameworkCore.Design\
+Microsoft.EntityFrameworkCore.SqlServer\
+Microsoft.EntityFrameworkCore.Tools\
+Microsoft.Extensions.Configuration\
 Mircosoft.VisualStudio.Web.CodeGeneration.Design
 
 
