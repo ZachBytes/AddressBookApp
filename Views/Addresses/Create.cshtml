@@ -1,0 +1,59 @@
+﻿@model AddressBookApp.Models.Address
+
+@{
+    Layout = null;
+}
+
+<div id='CreateAddressModal' class='modal'>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div id='ModalAddAddresses' class="modal-body">
+                <h4>Add Address</h4>
+                <hr />
+                <div class="row">
+                    <div class="col-md-4">
+                        <form>
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                <label asp-for="ContactID" class="control-label"></label>
+                                <input asp-for="ContactID" id="AddressContactIDAdd" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="StreetAddress" class="control-label"></label>
+                                <input asp-for="StreetAddress" id="StreetAdd" class="form-control" />
+                                <span asp-validation-for="StreetAddress" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="City" class="control-label"></label>
+                                <input asp-for="City" id="CityAdd" class="form-control" />
+                                <span asp-validation-for="City" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="State" class="control-label"></label>
+                                <input asp-for="State" id="StateAdd" class="form-control" />
+                                <span asp-validation-for="State" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="PostalCode" class="control-label"></label>
+                                <input asp-for="PostalCode" id="PostalCodeAdd" class="form-control" />
+                                <span asp-validation-for="PostalCode" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <a href="#" class="btn btn-dark" onclick="createAddress()">Create Address</a>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

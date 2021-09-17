@@ -1,0 +1,36 @@
+﻿@model IEnumerable<AddressBookApp.Models.Contact>
+
+@{
+    ViewData["Title"] = "Contact Browser";
+}
+<br />
+<br />
+<h1>Contact Browser</h1>
+<br />
+<br />
+<div>
+    <br />
+    <table id="ContactTable" class="display responsive nowrap" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>ContactID</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>AddressID</th>
+                <th>StreetAddress</th>
+                <th>city</th>
+                <th>state</th>
+                <th>postalCode</th>
+            </tr>
+        </thead>
+    </table>
+
+    <div id="showModal"></div>
+    <div id="showModal2"></div>
+    <div id="showModal3"></div>
+    <div id="showModal4"></div>
+
+    <a href="#" onclick="openContactModal()" class="btn btn-dark"><strong>Add Contact</strong></a>
+
+</div>
+
